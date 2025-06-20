@@ -338,18 +338,26 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background: var(--accent-color);
+	background: linear-gradient(to right, #904e95, #e96443);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+#loading-icon{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 66px;
+    transform: translate(-50%, -50%);
+}
+
 .loading-container,
 .loading{
 	height: 100px;
-	position: relative;
-	width: 100px;
-	border-radius: 100%;
+    position: relative;
+    width: 400px;
+    border-radius: 100%;
 }
 
 .loading-container{
@@ -357,10 +365,10 @@ body{
 }
 
 .loading{
-	border: 1px solid transparent;
+	/* border: 1px solid transparent;
 	border-color: transparent var(--accent-secondary-color) transparent var(--accent-secondary-color);
 	animation: rotate-loading 1.5s linear 0s infinite normal;
-	transform-origin: 50% 50%;
+	transform-origin: 50% 50%; */
 }
 
 .loading-container:hover .loading,
@@ -2049,7 +2057,7 @@ header.main-header .header-sticky.active{
 
 .benefit-project-info{
 	position: absolute;
-	bottom: 80px;
+	bottom: 22px;
 	left: -75px;
 	width: 100%;
 	max-width: 250px;
@@ -2767,8 +2775,8 @@ header.main-header .header-sticky.active{
 }
 
 .main-footer{
-	background-color: var(--accent-color);
-	background-image: url('../images/footer-bg.svg');
+
+	background-image:linear-gradient(to right, #904e95, #e96443), url('../images/footer-bg.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -2782,16 +2790,17 @@ header.main-header .header-sticky.active{
 	justify-content: space-between;
 	gap: 30px;
 	/* border-bottom: 1px solid var(--dark-divider-color); */
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	/* padding-bottom: 40px; */
-	padding: 50px;
-    background-color: var(--accent-secondary-color);
+	/* padding: 50px; */
+    /* background-color: var(--accent-secondary-color); */
+
     border-radius: 20px;
 }
 
 .footer-logo img{
 	width: 100%;
-	max-width: 209px;
+	max-width: 270px;
 }
 
 .footer-social-links{
@@ -2985,7 +2994,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-header{
-	background: url('../images/page-header-bg.svg'), var(--accent-color);
+	background: linear-gradient(to right, #904e95, #e96443), var(--accent-color);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
