@@ -281,54 +281,347 @@
                 </div>
               </div>
 
-              <div class="team-contact-form contact-us-form">
-                <!-- Section Title Start -->
-                <div class="section-title">
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">Get in touch <span>with us</span></h2>
-                </div>
-                <!-- Section Title End -->
-
-                <!-- Contact Form Start -->
-                <div class="contact-form">
-                    <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
-                        <div class="row">                                
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group col-md-12 mb-5">
-                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Write Message..."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <button type="submit" class="btn-default">submit message</button>
-                                <div id="msgSubmit" class="h3 hidden"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- Contact Form End -->
-            </div>
+              
         </div>
     </div>
     <!-- Page Service Single End -->
+    <div class="our-services">
+        <div class="container">
+          <div class="row section-row align-items-center">
+            <div class="col-lg-6">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">Your Future Starts NOW</h3>
+                <h2
+                  class="text-anime-style-2"
+                  data-cursor="-opaque"
+                  data-wow-delay="0.2s"
+                >
+                  Discover IICS's Untapped <span>Career Goldmine</span>
+                </h2>
+              </div>
+              <!-- Section Title End -->
+            </div>
+  
+            <div class="col-lg-6 !flex items-center gap-[20px]">
+              <!-- Service Button Start -->
+              <div class="section-btn wow fadeInUp" data-wow-delay="0.2s" onclick="showTab('degree')">
+                <p class="btn-default">view degree courses</p>
+              </div>
+              <div class="section-btn wow fadeInUp" data-wow-delay="0.2s" onclick="showTab('certificate')">
+                <p  class="btn-default">view certificate courses</p>
+              </div>
+              <!-- Service Button End -->
+            </div>
+          </div>
+  
+          <div class="row service-list degree">
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp">
+                <div class="service-item active">
+                  <div class="icon-box">
+                    <img src="images/icon-service-1.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html"> Events & Experiential Management</a></h3>
+                    <p>
+                      Learn to design expereinces and promote events through social media and digital campaigns.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                  <div class="icon-box">
+                    <img src="images/icon-service-2.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">Animation & Game Development</a></h3>
+                    <p>
+                     Learn to animate, design, and build game through studio-based training and industry experience.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                  <div class="icon-box">
+                    <img src="images/icon-service-3.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">Digital Content Creation & Media Management</a></h3>
+                    <p>
+                      Learn to shoot, edit, and manage content while building your brand across digital platforms.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <div class="icon-box">
+                    <img src="images/icon-service-4.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">Sound Design & Music Video Production</a></h3>
+                    <p>
+                     Learn to create compelling music videos, and master audio tools and music tech.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-12">
+              <!-- Section Footer Text Start -->
+              <div class="section-footer-text wow fadeInUp" data-wow-delay="0.8s">
+                <p>
+                  <span>free Career Guidance</span>Your Goals, Our Guidance-
+                  <a href="contact.html">Talk to our Experts Today!</a>
+                </p>
+              </div>
+              <!-- Section Footer Text End -->
+            </div>
+          </div>
+          <div class="row service-list certificate" style="display: none;">
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp">
+                <div class="service-item active">
+                  <div class="icon-box">
+                    <img src="images/icon-service-1.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">Costume Designing</a></h3>
+                    <p>
+                      Learn to design iconic costumes for film, theatre, and fashion using fabric, styling, history, and AI-powered techniques.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                  <div class="icon-box">
+                    <img src="images/icon-service-2.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">Hair, Makeup & Prosthetics</a></h3>
+                    <p>
+                      Learn to create stunning looks for film and fashion with hands-on training in makeup, hair, and prosthetics
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item-box wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                  <div class="icon-box">
+                    <img src="images/icon-service-3.svg" alt="" />
+                  </div>
+                  <div class="service-item-content">
+                    <h3><a href="service-single.html">PR & Journalism</a></h3>
+                    <p>
+                      Learn to craft powerful stories, build public image, and navigate the fast-paced world of media and journalism.
+                    </p>
+                  </div>
+                  <div class="service-readmore-btn">
+                    <a href="service-single.html" class="readmore-btn"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Service Item End -->
+            </div>
+  
+            
+  
+            <div class="col-lg-12">
+              <!-- Section Footer Text Start -->
+              <div class="section-footer-text wow fadeInUp" data-wow-delay="0.8s">
+                <p>
+                  <span>free Career Support</span>Your Creative Journey Starts Here-
+                  <a href="contact.html">Talk to our Experts Today!</a>
+                </p>
+              </div>
+              <!-- Section Footer Text End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scrolling-ticker-text">
+        <div class="scrolling-ticker-text-box">
+          <div class="scrolling-ticker-text-content">
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />GLOBAL STUDY TOUR</span
+            >
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />PAID APPRENTICESHIP</span
+            >
+            <span><img src="images/icon-asterisk.svg" alt="" />INDUSTRY LED TRAINING</span>
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />LIVE PROJECTS</span
+            >
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />CREATIVE INCUBATOR</span
+            >
+            <span><img src="images/icon-asterisk.svg" alt="" />ENTREPRENEURSHIP FOCUSED</span>
+          </div>
+  
+          <div class="scrolling-ticker-text-content">
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />Strategic Hiring</span
+            >
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />HR Consulting</span
+            >
+            <span><img src="images/icon-asterisk.svg" alt="" />Support</span>
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />Strategic Hiring</span
+            >
+            <span
+              ><img src="images/icon-asterisk.svg" alt="" />HR Consulting</span
+            >
+            <span><img src="images/icon-asterisk.svg" alt="" />Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-team">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Nurturing your journey with India’s creative legends</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Our Industry  <span>Mentors</span></h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Service Button Start -->
+                    <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="team.html" class="btn-default">View All Industry Mentors</a>
+                    </div>
+                    <!-- Service Button End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="swiper mySwiperSecond">
+                    <div class="swiper-wrapper" id="courseContainer"></div>
+                    <!-- <div class="swiper-pagination mt-4"></div> -->
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+
+      <div class="team-contact-form contact-us-form">
+        <!-- Section Title Start -->
+        <div class="section-title">
+            <h2 class="text-anime-style-2" data-cursor="-opaque">Get in touch <span>with us</span></h2>
+        </div>
+        <!-- Section Title End -->
+
+       
+
+        <!-- Contact Form Start -->
+        <div class="contact-form">
+            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
+                <div class="row">                                
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-12 mb-5">
+                        <textarea name="message" class="form-control" id="message" rows="3" placeholder="Write Message..."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <button type="submit" class="btn-default">submit message</button>
+                        <div id="msgSubmit" class="h3 hidden"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Contact Form End -->
+    </div>
+
+
 
     <!-- Scrolling Ticker Section Start -->
     <div class="our-scrolling-ticker footer-scrolling-ticker">
@@ -536,5 +829,280 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+    <script>
+        const swiperSecond = new Swiper(".mySwiperSecond", {
+       slidesPerView: 1,
+       spaceBetween: 20,
+       loop: true,
+       autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       breakpoints: {
+         768: {
+           slidesPerView: 3,
+         },
+         992: {
+           slidesPerView: 4,
+         },
+         1200: {
+           slidesPerView: 4,
+         },
+       },
+     });
+   </script>
+
+   <script>
+         const industryMentor = [
+       {
+         name: "Padma Shri Resul Pookutty",
+         designation:
+           "Indian Sound Designer",
+         image: "images/IICS/iics_image/industryMentors/harry.webp",
+       },
+       {
+         name: "Padma Shri Shankar Mahadevan",
+         designation:
+           "Indian singer and composer",
+         image: "images/IICS/iics_image/industryMentors/ashish.webp",
+       },
+       {
+         name: "Ms.Dia Mirza",
+         designation: "Actor",
+         image: "images/IICS/iics_image/internationalMentors/mark.webp",
+       },
+       {
+         name: "Ms. Kavita Krishnamurthy",
+         designation: "Indian playback singer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms. Neeta Lulla",
+         designation: "Costume Designer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms. Revathy Asha Kelunni",
+         designation: "Actor/ Filmmaker",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Zakir Khan",
+         designation: "Comedian",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms.Sushma Gaikwad",
+         designation: "Co-founder Ice Global, Wizcraft MIME & Sukhoon",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Suresh Eriyat",
+         designation: "Production Designer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Bharat Dabholkar",
+         designation: "Actor",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Amit Sadh",
+         designation: "Actor",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Sameer Tobaccowala",
+         designation: "CEO, Shobiz Experiential Communications",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Amit Behl",
+         designation: "Indian Theater Actor",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms. Bina Paul",
+         designation: "Indian film editor",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Omung Kumar",
+         designation: "Sound Designer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Kamlesh Pandey",
+         designation: "Writer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Shayam Kaushal",
+         designation: "Director",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms. Jaya Bhattacharya",
+         designation: "Indian television actress",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Rahul Rawail",
+         designation: "Indian Film Director",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Jaya Kumar",
+         designation: "Toonz Media Group Holdings Pvt Ltd",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Jan Horn",
+         designation: "Managing Director of SAE Dubai University",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Salim Arif",
+         designation: "Indian Theatre & Film Actor",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Dr. L. Subramaniam",
+         designation: "Indian Violinist",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Kausar Munir",
+         designation: "Lyricist/Writer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Anupam Shobhakar",
+         designation: "Indian musician, composer, instrumentalist, record producer, and classically trained sarodist",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Vaibhav Kumaresh",
+         designation: "Founder, Director",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Sumanto Ray",
+         designation: "Actor, Voice Artist, Dubbing Director, Dialogue writer, Music creator",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms.Anusha Srinivasan Iyer",
+         designation: "Digital Creator, Filmaker, Director",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Sudeep Chatterjee",
+         designation: "Cinematographer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr.Avijit Dutt",
+         designation: "Advertisement Agency",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Vishnu Patel",
+         designation: "Group CEO – Special Projects",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Ms. Kireet khurana",
+         designation: "Climb Media (I) Pvt. Ltd",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr.Shibasish Sarkar",
+         designation: "Group CEO - Reliance Studios; Chairman/ Film Producer",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       {
+         name: "Mr. Anand Jha",
+         designation: "Nilee Games",
+         image:
+           "images/IICS/iics_image/internationalMentors/garethBenson.webp",
+       },
+       
+     ];
+     const container = document.getElementById("courseContainer");
+
+industryMentor.forEach((course) => {
+ const slide = document.createElement("div");
+ slide.className = "swiper-slide";
+ slide.innerHTML = `
+      <div class="col-lg-12 col-md-12">
+                   <!-- Team Item Start -->
+                   <div class="team-item wow fadeInUp">
+                       <div class="team-image">
+                           <a href="team-single.html" data-cursor-text="View">
+                               <figure class="image-anime">
+                                   <img src="images/team-1.jpg" alt="">
+                               </figure>
+                           </a>
+
+                           <!-- Team Social Icon Start -->
+                           <div class="team-social-icon">
+                               <ul>
+                                   <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                   <li><a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a></li>
+                                   <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                               </ul>
+                           </div>
+                           <!-- Team Social Icon End -->
+                       </div>
+
+                       <!-- Team Content Start -->
+                       <div class="team-content">
+                           <h2><a href="team-single.html">${course.name}</a></h2>
+                           <p>${course.designation}</p>
+                       </div>
+                       <!-- Team Content End -->
+                   </div>
+                   <!-- Team Item End -->
+               </div>
+   `;
+ container.appendChild(slide);
+});
+   </script>
 </body>
 </html>

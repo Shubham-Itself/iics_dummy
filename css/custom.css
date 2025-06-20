@@ -51,8 +51,8 @@
 	--primary-color				: #000000;
 	--secondary-color			: #FAFAFA;
 	--text-color				: #666666;
-	--accent-color				: #523b67;
-	--accent-secondary-color	: #d8d06e;
+	--accent-color				: #49266b;
+	--accent-secondary-color	: #f5d724;
 	--white-color				: #FFFFFF;
 	--divider-color				: #6666661A;
 	--dark-divider-color		: #FFFFFF1A;
@@ -2052,7 +2052,7 @@ header.main-header .header-sticky.active{
 	bottom: 80px;
 	left: -75px;
 	width: 100%;
-	max-width: 235px;
+	max-width: 250px;
 	display: flex;
 	align-items: center;
 	background: var(--white-color);
@@ -3850,7 +3850,7 @@ header.main-header .header-sticky.active{
 .service-expert-box,
 .service-approach-box,
 .service-solution-box{
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .service-expert-list{
