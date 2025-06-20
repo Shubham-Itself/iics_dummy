@@ -51,8 +51,8 @@
 	--primary-color				: #000000;
 	--secondary-color			: #FAFAFA;
 	--text-color				: #666666;
-	--accent-color				: #49266b;
-	--accent-secondary-color	: #f5d724;
+	--accent-color				: #914d94;
+	--accent-secondary-color	:  #ffd700;;
 	--white-color				: #FFFFFF;
 	--divider-color				: #6666661A;
 	--dark-divider-color		: #FFFFFF1A;
@@ -832,7 +832,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .hero{
-	background: var(--accent-color) url('../images/hero-bg.svg') no-repeat;
+	background: linear-gradient(to right, #904e95, #e96443), url('../images/hero-bg.svg') no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
 	padding: 100px 0 0;
@@ -1648,7 +1648,7 @@ header.main-header .header-sticky.active{
 }
 
 .what-we-do-content{
-	background-color: var(--accent-color);
+	background: linear-gradient(to right, #904e95, #e96443);
 	height: 100%;
 	align-content: center;
 	padding: 100px 5.208vw;
