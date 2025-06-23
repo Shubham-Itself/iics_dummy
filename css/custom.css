@@ -694,9 +694,14 @@ header.main-header .header-sticky.active{
 }
 
 .main-menu ul ul li{
+
 	margin: 0;
 	padding: 0;
 }
+.main-menu ul ul li:not(:last-child) {
+	border-bottom: 1px solid #bfa204;
+	
+  }
 
 .main-menu ul ul li.nav-item a{
 	color: var(--primary-color);
@@ -1588,8 +1593,8 @@ header.main-header .header-sticky.active{
 
 .why-choose-item .icon-box{
 	position: relative;
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1621,7 +1626,7 @@ header.main-header .header-sticky.active{
 .why-choose-item .icon-box img{
 	position: relative;
 	width: 100%;
-	max-width: 28px;
+	max-width: 32px;
 	transition: all 0.4s ease-in-out;
 	z-index: 1;
 }
@@ -2287,6 +2292,8 @@ header.main-header .header-sticky.active{
 .author-image figure img{
 	width: 100%;
 	max-width: 60px;
+	height: 60px;
+	object-fit: cover;
 	border-radius: 50%;
 }
 
@@ -7439,4 +7446,55 @@ header.main-header .header-sticky.active{
   #send-btn:hover {
 	background-color: #e0c320;
   }
+
+
+  .jayantChoudharyBg{
+	background: url(../images/IICS/iics_image/stakeholder/jayantchoudhary.jpg) no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+  }
+  .btn-before{
+	line-height: 20px;
+	font-weight: 500;
+  }
+
+  .btn-before::before{
+display: none !important;
+  }
+  .btn-before::after{
+	background-color: var(--accent-color) !important;
+	  }
+
+	  .atulTiwariBg{
+		background: url(../images/IICS/iics_image/stakeholder/atul-kumar-tiwari.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+	  }
+
+	  .jayantChoudharyBg::before{
+		display: none;
+	  }
+
+	  .atulTiwariBg::before{
+display: none;
+	  }
   
+	  .shankar-bg{
+		background: url(../images/IICS/iics_image/home-about-shankar-2.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+	  }
+	  .shankar-bg::before{
+		display: none;
+	  }
+	  .nsdcbg{
+		border: 1px solid black;
+		background: url(../images/IICS/iics_image/stakeholder/NAPS-1.png) no-repeat;
+    background-position: center center;
+	background-position-y: -58px;
+    background-size: cover;
+	  }
+
+	  .nsdcbg::before{
+		display: none;
+	  }
