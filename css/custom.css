@@ -1495,7 +1495,7 @@ header.main-header .header-sticky.active{
 	width: 100%;
 	aspect-ratio: 1 / 0.68;
 	object-fit: cover;
-	filter: brightness(70%);
+	filter: brightness(100%);
 	border-radius: 20px;
 }
 
