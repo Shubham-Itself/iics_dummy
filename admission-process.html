@@ -852,7 +852,7 @@
        
 
         <!-- Contact Form Start -->
-        <div class="contact-form">
+        <div class="contact-form hidden">
             <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
                 <div class="row">                                
                     <div class="form-group col-md-6 mb-4">
@@ -887,6 +887,7 @@
                 </div>
             </form>
         </div>
+        <div class="npf_wgts" data-height="500px" data-w="4e9456bd4734aa4018d8c655c6ef1914"></div>
         <!-- Contact Form End -->
     </div>
 
@@ -1426,5 +1427,20 @@ industryMentor.forEach((course) => {
         e.stopPropagation();
       });
     </script>
+     <script>
+      function showTab(tabName) {
+       const degreeTab = document.querySelector('.degree');
+       const certificateTab = document.querySelector('.certificate');
+   
+       if (tabName === 'degree') {
+         degreeTab.style.display = 'flex';
+         certificateTab.style.display = 'none';
+       } else {
+         degreeTab.style.display = 'none';
+         certificateTab.style.display = 'flex';
+       }
+     }
+   </script>
+   <script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in6.nopaperforms.com/emwgts.js"; document.body.appendChild(s); </script>
 </body>
 </html>

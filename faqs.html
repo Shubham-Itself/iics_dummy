@@ -554,28 +554,18 @@
                         <div class="page-catagery-list wow fadeInUp">
                             <ul>
                                 <li><a href="about.html">About IICS</a></li>
-                                <li><a href="event-&-experimental-management.html">3 Year Degree Program</a></li>
-                                <li><a href="hair-make-up-&-prosthetics.html">Short Term Program</a></li>
-                                <li><a href="student-life.html">Student Life</a></li>
+                                <li><a href="event-&-experimental-management.html">Diploma & Degree Courses</a></li>
+                                <li><a href="hair-make-up-&-prosthetics.html">Career Oriented Programs</a></li>
+                                <li><a href="student-life.html">Life@IICS</a></li>
                             </ul>
                         </div>
                         <!-- Page Category List End -->
 
                         <!-- Sidebar CTA Box Start -->
-                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
-                            <!-- Sidebar CTA Content Start -->
-                            <div class="sidebar-cta-logo">
-                                <img src="images/sidebar-cta-logo.svg" alt="">
+                        <div class="swiper mySwiperSecond">
+                            <div class="swiper-wrapper" id="swiperContainer"></div>
+                            <!-- <div class="swiper-pagination mt-4"></div> -->
                             </div>
-                            <!-- Sidebar CTA Content End -->
-                            
-                            <!-- Sidebar CTA Contact Start -->
-                            <div class="sidebar-cta-content">
-                                <h3>Take control of your career unlock opportunities today!</h3>
-                               <a href="tel:+123465789" class="btn-default"><img src="images/icon-sidebar-cta-phone.svg" alt="">+123 465 789</a>
-                            </div>
-                            <!-- Sidebar CTA Contact End -->
-                        </div>
                         <!-- Sidebar CTA Box End -->
                     </div>
                     <!-- Page Single Sidebar End -->
@@ -1038,5 +1028,88 @@
         e.stopPropagation();
       });
     </script>
+     <script>
+        const industryMentor = [
+    {
+        
+        description:
+        "₹35,000–50,000 Assured Stipend in the last 3 months of Degree Program!",
+        image: "images/IICS/iics_image/stipend.jpeg",
+    },
+   
+    {
+        description:
+        "From Cannes to MIPCOM – IICS Goes Global",
+        image: "images/IICS/iics_image/canon.jpeg",
+    },
+    {
+        description:
+        "Admissions Closing Soon – Apply Before June 30",
+        image: "images/IICS/iics_image/admission-closing-final.jpg",
+    },
+    {
+        description:
+        "Join Our Career Conclave 'Made for Media' – July 05, 2025@Siri Fort Auditorium",
+        image: "images/IICS/iics_image/join-career.jpg",
+    },
+    {
+        description:
+        "Talk to a Career Advisor Today  Book a Free Campus Tour",
+        image: "images/IICS/iics_image/book-free-campus.jpg",
+    }
+   
+    
+    ];
+    const container = document.getElementById("swiperContainer");
+
+industryMentor.forEach((course) => {
+const slide = document.createElement("div");
+slide.className = "swiper-slide";
+slide.innerHTML = `
+   <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s" style="background-image: url(${course.image}); background-position: center center; background-size: cover;">
+                            <!-- Sidebar CTA Content Start -->
+                            <div class="sidebar-cta-logo invisible">
+                                <img src="images/sidebar-cta-logo.svg" alt="">
+                            </div>
+                            <!-- Sidebar CTA Content End -->
+                            
+                            <!-- Sidebar CTA Contact Start -->
+                           
+                            <div class="sidebar-cta-content">
+                                <h3>${course.description}</h3>
+                               <a href="tel:+91 959-4949-959" class="btn-default !flex w-fit"><img src="images/icon-sidebar-cta-phone.svg" alt="">+91 959-4949-959</a>
+                            </div>
+                            <!-- Sidebar CTA Contact End -->
+                        </div>
+`;
+container.appendChild(slide);
+});
+</script>
+<script>
+    const swiperSecond = new Swiper(".mySwiperSecond", {
+slidesPerView: 1,
+spaceBetween: 20,
+loop: true,
+autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+},
+pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+breakpoints: {
+    768: {
+    slidesPerView: 1,
+    },
+    992: {
+    slidesPerView: 1,
+    },
+    1200: {
+    slidesPerView: 1,
+    },
+},
+});
+</script>
 </body>
 </html>

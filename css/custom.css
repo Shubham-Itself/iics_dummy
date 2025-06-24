@@ -7480,8 +7480,9 @@ display: none;
 	  }
   
 	  .shankar-bg{
-		background: url(../images/IICS/iics_image/home-about-shankar-2.png) no-repeat;
-    background-position: center center;
+		background: url(../images/IICS/iics_image/shankar-again.jpeg) no-repeat;
+    /* background-position: center center; */
+	background-position-y: -22px;
     background-size: cover;
 	  }
 	  .shankar-bg::before{

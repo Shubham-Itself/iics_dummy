@@ -389,7 +389,7 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque">Our <span>Degree Programs</span></h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque">Our <span>Degree & Diploma Courses</span></h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./">Discover IICS’s Untapped Career Goldmine</a></li>
@@ -415,28 +415,20 @@
                             <h3>All Certificate Courses</h3>
                             <ul>
                                 <li><a  href="hair-make-up-&-prosthetics.html#courseContainer">Make Up & Prosthetics </a></li>
-                                <li><a  class="!bg-[#914d94] !text-[#fff]" href="">Costume Design</a></li>
+                                <li><a  class="!bg-[#914d94] !text-[#fff]" href="">Costume Designing</a></li>
                                 <li><a  href="pr-&-journalism.html#courseContainer">Digital PR & Journalism</a></li>
+                                <li><a  href="pr-&-journalism.html#courseContainer">Visual & Communication Design</a></li>
+
                                 <!-- <li><a href="sound-design-&-music-video-production.html#courseContainer">Sound Design and Music Video Production</a></li> -->
                             </ul>
                         </div>
                         <!-- Page Category List End -->
 
                         <!-- Sidebar CTA Box Start -->
-                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
-                            <!-- Sidebar CTA Content Start -->
-                            <div class="sidebar-cta-logo">
-                                <img src="images/sidebar-cta-logo.svg" alt="">
+                        <div class="swiper mySwiperSecond">
+                            <div class="swiper-wrapper" id="swiperContainer"></div>
+                            <!-- <div class="swiper-pagination mt-4"></div> -->
                             </div>
-                            <!-- Sidebar CTA Content End -->
-                            
-                            <!-- Sidebar CTA Contact Start -->
-                            <div class="sidebar-cta-content">
-                                <h3>Take control of your career unlock opportunities today!</h3>
-                               <a href="tel:+123465789" class="btn-default"><img src="images/icon-sidebar-cta-phone.svg" alt="">+123 465 789</a>
-                            </div>
-                            <!-- Sidebar CTA Contact End -->
-                        </div>
                         <!-- Sidebar CTA Box End -->
                     </div>
                     <!-- Page Single Sidebar End -->
@@ -837,7 +829,7 @@
                     <!-- Section Title End -->
 
                     <!-- Contact Form Start -->
-                    <div class="contact-form">
+                    <div class="contact-form hidden">
                         <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
@@ -872,6 +864,7 @@
                             </div>
                         </form>
                     </div>
+                    <div class="npf_wgts" data-height="500px" data-w="4e9456bd4734aa4018d8c655c6ef1914"></div>
                     <!-- Contact Form End -->
                 </div>
             </div>
@@ -1183,5 +1176,89 @@ head3.style.backgroundColor = ''
           e.stopPropagation();
         });
       </script>
+      <script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in6.nopaperforms.com/emwgts.js"; document.body.appendChild(s); </script>
+      <script>
+        const industryMentor = [
+    {
+        
+        description:
+        "₹35,000–50,000 Assured Stipend in the last 3 months of Degree Program!",
+        image: "images/IICS/iics_image/stipend.jpeg",
+    },
+   
+    {
+        description:
+        "From Cannes to MIPCOM – IICS Goes Global",
+        image: "images/IICS/iics_image/canon.jpeg",
+    },
+    {
+        description:
+        "Admissions Closing Soon – Apply Before June 30",
+        image: "images/IICS/iics_image/admission-closing-final.jpg",
+    },
+    {
+        description:
+        "Join Our Career Conclave 'Made for Media' – July 05, 2025@Siri Fort Auditorium",
+        image: "images/IICS/iics_image/join-career.jpg",
+    },
+    {
+        description:
+        "Talk to a Career Advisor Today  Book a Free Campus Tour",
+        image: "images/IICS/iics_image/book-free-campus.jpg",
+    }
+   
+    
+    ];
+    const container = document.getElementById("swiperContainer");
+
+industryMentor.forEach((course) => {
+const slide = document.createElement("div");
+slide.className = "swiper-slide";
+slide.innerHTML = `
+   <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s" style="background-image: url(${course.image}); background-position: center center; background-size: cover;">
+                            <!-- Sidebar CTA Content Start -->
+                            <div class="sidebar-cta-logo invisible">
+                                <img src="images/sidebar-cta-logo.svg" alt="">
+                            </div>
+                            <!-- Sidebar CTA Content End -->
+                            
+                            <!-- Sidebar CTA Contact Start -->
+                           
+                            <div class="sidebar-cta-content">
+                                <h3>${course.description}</h3>
+                               <a href="tel:+91 959-4949-959" class="btn-default !flex w-fit"><img src="images/icon-sidebar-cta-phone.svg" alt="">+91 959-4949-959</a>
+                            </div>
+                            <!-- Sidebar CTA Contact End -->
+                        </div>
+`;
+container.appendChild(slide);
+});
+</script>
+<script>
+    const swiperSecond = new Swiper(".mySwiperSecond", {
+slidesPerView: 1,
+spaceBetween: 20,
+loop: true,
+autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+},
+pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+breakpoints: {
+    768: {
+    slidesPerView: 1,
+    },
+    992: {
+    slidesPerView: 1,
+    },
+    1200: {
+    slidesPerView: 1,
+    },
+},
+});
+</script>
 </body>
 </html>
