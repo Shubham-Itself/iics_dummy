@@ -129,7 +129,7 @@ const responses = [
       <p>Here's a list of all courses at IICS:</p>
       <ul>
        <li><a href="animation-&-gaming.html" class="!text-[#000]">Animation & Game Development</a></li>
-<li><a href="bsc-in-digital-content-creation-&-media-production.html" class="!text-[#000]">Digital Content Creation and Media Management</a></li>
+<li><a href="bsc-in-digital-content-creation-&-media-production.html" class="!text-[#000]">Digital Content Creation & Media Management</a></li>
 <li><a href="sound-design-&-music-video-production.html" class="!text-[#000]">Sound Design & Music Video Production</a></li>
 <li><a href="event-&-experimental-management.html" class="!text-[#000]">Event And Experimental Management</a></li>
 <li><a href="hair-make-up-&-prosthetics.html" class="!text-[#000]">Hair, Makeup & Prosthetics</a></li>
@@ -167,6 +167,30 @@ const responses = [
         <li><a href="/#programs" class="!text-[#000]">Explore Career Outcomes</a></li>
       </ul>`
   },
+  {
+    key: "International Travel",
+    keywords: ["abroad", "travel", "international trip", "foreign", "cannes", "exposure"],
+    response: `
+      <p><strong>Will I get to travel abroad?</strong></p>
+      <p>Yes! Every student is guaranteed at least one international exposure trip to major creative industry events during their course.</p>
+      <p><strong>Which international events can I attend?</strong></p>
+      <p>Students may attend global events like Cannes Film Festival, MIPCOM, SIGGRAPH, MIDEM, and other top media, entertainment, and design summits based on their specialization.</p>
+      <p><strong>Are international trips included in the course fee?</strong></p>
+      <p>Yes, the international exposure trip is included in your course fee—no extra charges!</p>
+    `
+  },
+  {
+    key: "EMI and Fees",
+    keywords: ["emi", "loan", "installment", "payment option", "scholarship", "fee"],
+    response: `
+      <p><strong>Are EMI or loan options available?</strong></p>
+      <p>Yes! We offer easy EMI plans and loan assistance to help you manage your course fee smoothly.</p>
+      <p><strong>Do you provide scholarships?</strong></p>
+      <p>No! IICS does not provide any kind of scholarships.</p>
+      <p><strong>Is there any registration fee?</strong></p>
+      <p>Yes, a non-refundable registration fee of INR 2000 is applicable.</p>
+    `
+  }
 //   {
 //     key: "Live Projects",
 //     keywords: ["project", "live", "real world"],
