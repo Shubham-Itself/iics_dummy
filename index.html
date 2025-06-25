@@ -43,6 +43,7 @@
   </head>
   <body>
     <!-- Preloader Start -->
+   
     <div class="preloader">
       <div class="loading-container">
         <div class="loading"></div>
@@ -50,6 +51,16 @@
       </div>
     </div>
     <!-- Preloader End -->
+    <div id="popup" onclick="closePopup(event)" class="hidden fixed w-full h-screen z-[9999] flex justify-center items-center bg-black/80">
+      <div class="w-[65%] relative image-popup">
+        <img class="w-full" src="images/IICS/iics_image/event-image-popup.jpg" alt="Popup Image">
+    
+        <!-- ✅ Add closePopup here -->
+        <div onclick="closePopup(event)" class="close-btn absolute w-[30px] h-[30px] flex justify-center items-center bg-white rounded-full top-[-15px] right-[-15px] cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
     <div class="fixed z-[1001] top-[50%] right-0  py-2 px-2">
       <div class="flex flex-col items-center gap-3">
         <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">  <img src="images/IICS/iics_image/creative-incubator/facbook.png"  class="w-[40px] box-shadow-img" alt=""></a>
@@ -396,6 +407,8 @@
       </div>
     </header>
     <!-- Header End -->
+
+   
 
     <!-- Hero Section Start -->
     <div class="hero dark-section">
@@ -2523,5 +2536,37 @@ IICS is coming up.
         e.stopPropagation();
       });
     </script>
+   <script>
+    function disableScroll() {
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const popup = document.getElementById('popup');
+    popup.classList.remove('hidden');
+    disableScroll();
+  }, 3000);
+});
+
+function closePopup(event) {
+  const popup = document.getElementById('popup');
+  console.log("Clicked:", event.target);
+
+  if (
+    event.target.id === 'popup' ||          // overlay
+    event.target.closest('.close-btn')      // close icon wrapper
+  ) {
+    popup.classList.add('hidden');
+    enableScroll();
+  }
+}
+   </script>
   </body>
 </html>
