@@ -2133,7 +2133,7 @@ Location:
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 196px 0 130px;
+  padding: 130px 0 130px;
   overflow: hidden;
 }
 
@@ -27509,4 +27509,8 @@ html {
   font-weight: 600;
   margin-bottom: 2px;
   padding-right: 5px;
+}
+
+.mar {
+  margin-top: 100px;
 }
